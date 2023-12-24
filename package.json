@@ -2,7 +2,9 @@
   "name": "project",
   "version": "1.0.0",
   "description": "Gulp frontend start project",
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky install"
+  },
   "dev": "gulp watch",
   "build:dev": "gulp build",
   "build:prod": "gulp build --prod",
