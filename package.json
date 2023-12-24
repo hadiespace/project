@@ -1,0 +1,37 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Gulp frontend start project",
+  "scripts": {},
+  "dev": "gulp watch",
+  "build:dev": "gulp build",
+  "build:prod": "gulp build --prod",
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "keywords": [
+    "gulp",
+    "webpack",
+    "pug",
+    "scss",
+    "js"
+  ],
+  "author": "hadiespace",
+  "license": "WTFPL",
+  "devDependencies": {
+    "@babel/core": "7.23.6",
+    "@babel/eslint-parser": "7.23.3",
+    "@babel/register": "7.22.15",
+    "babel-preset-airbnb": "5.0.0",
+    "eslint": "8.56.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.29.1",
+    "gulp": "3.9.1",
+    "husky": "8.0.3"
+  }
+}
